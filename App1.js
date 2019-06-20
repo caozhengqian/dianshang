@@ -1,7 +1,5 @@
 
 import React from 'react';
-import Detail from './Detail'
-import Greeting from './Greeting'
 import { createStackNavigator, createAppContainer } from "react-navigation";
 import {  Button,View, Text } from "react-native";
 

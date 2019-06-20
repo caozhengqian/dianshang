@@ -1,7 +1,5 @@
 
 import React from 'react';
-import Detail from './Detail'
-import Greeting from './Greeting'
 import { createStackNavigator, createAppContainer } from "react-navigation";
 import {  Button,View, Text } from "react-native";
 
@@ -36,6 +34,13 @@ function HomeScreen(props){
 HomeScreen.navigationOptions = {
     //自定义标题组件
     headerTitle: <LogoTitle />,
+    headerRight: (
+        <Button
+            onPress={() => alert('This is a button!')}
+            title="Info"
+            color="#fff"
+        />
+    ),
     /**放开是文字标题加样式
     // title: 'Home',
     // headerStyle: {

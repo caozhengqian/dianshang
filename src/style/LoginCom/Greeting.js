@@ -6,7 +6,7 @@ import {
     Text,
     StyleSheet,
 } from 'react-native';
-import {useFormInput} from './use/useFormInput'
+import {useFormInput} from '../use/us'
 import { Button } from '@ant-design/react-native';
 export default function Greeting(props) {
     const name = useFormInput();
