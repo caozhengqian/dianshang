@@ -3,7 +3,7 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import { Icon, SearchBar, TabBar } from '@ant-design/react-native';
 
-import Item from './DetailsCom/Item'
+import {Item} from './DetailsCom/Item'
 
 export default class Details extends React.Component {
     constructor(props) {

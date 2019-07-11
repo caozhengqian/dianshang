@@ -1,30 +1,28 @@
 
-import React from 'react';
-import { createStackNavigator, createAppContainer,createBottomTabNavigator } from "react-navigation";
-import {  Button,View, Text } from "react-native";
+import { createStackNavigator, createAppContainer } from "react-navigation";
 
-import Login from './src/style/Login'
+// import Login from './src/style/Login'
 import Details from './src/style/Details'
 
 
 const AppNavigator = createStackNavigator({
-    Home: {screen: Login},
+    // Home: {screen: Login},
     Details:{screen: Details}
 },{
     initialRouteName: 'Details',
     //标题默认样式
     defaultNavigationOptions: {
         headerStyle: {
-            backgroundColor: '#fff3eb',
-            backgroundColor: '#ffd8c2',
-            backgroundColor: '#ffbb99',
-            backgroundColor: '#ff9b70',
-            backgroundColor: '#ff7847',
-            backgroundColor: '#f4511e',
-            backgroundColor: '#cf350e',
-            backgroundColor: '#a81f03',
-            backgroundColor: '#821100',
-            backgroundColor: '#5c0900',
+            // backgroundColor: '#fff3eb',
+            // backgroundColor: '#ffd8c2',
+            // backgroundColor: '#ffbb99',
+            // backgroundColor: '#ff9b70',
+            // backgroundColor: '#ff7847',
+            // backgroundColor: '#f4511e',
+            // backgroundColor: '#cf350e',
+            // backgroundColor: '#a81f03',
+            // backgroundColor: '#821100',
+            // backgroundColor: '#5c0900',
 
             backgroundColor: '#f4511e',
         },

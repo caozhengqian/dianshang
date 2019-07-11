@@ -1,4 +1,4 @@
-import React, {useState,useContext} from 'react';
+import React from 'react';
 import {
     ActivityIndicator,
     FlatList,
@@ -13,7 +13,7 @@ import {
 //屏幕信息
 const dimensions = require('Dimensions');
 //获取屏幕的宽度和高度
-const {width, height} = dimensions.get('window');
+const {width} = dimensions.get('window');
 
 
 export default class Demo extends React.Component {
@@ -80,7 +80,7 @@ export default class Demo extends React.Component {
      * @private
      */
     _getHotList() {
-        this.state.isLoadMore = true
+        this.setState({isLoadMore:true})
         // console.log("重新加载11111"+this.page)
         fetch("http://m.app.haosou.com/index/getData?type=1&page=" + this.page)
             .then((response) => response.json())

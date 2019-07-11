@@ -1,12 +1,11 @@
-import {useState,useContext} from 'react';
+import {useState,useEffect,useContext} from 'react';
 import {
-    TextInput,
-    View,
-    Text,
     StyleSheet,
 } from 'react-native';
+import {TodosDispatch} from './Item'
 
 export default function useFormInput(initialValue) {
+    const dispatchItem = useContext(TodosDispatch);
     const styles = StyleSheet.create({
         abc:{
             paddingTop:3,
@@ -22,10 +21,14 @@ export default function useFormInput(initialValue) {
     });
     const [value,setValue] = useState(initialValue)
     function handleChange(e){
-        console.info('change');
-        // console.info(e);
+        console.info('input框change');
         setValue(e)
     }
+    useEffect(()=>{
+
+        console.info('input加载次数')
+    })
+
     return {
         value,
         onChange:handleChange,
