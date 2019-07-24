@@ -22,7 +22,7 @@ const AppNavigator = createStackNavigator({
             // backgroundColor: '#cf350e',
             // backgroundColor: '#a81f03',
             // backgroundColor: '#821100',
-            // backgroundColor: '#5c0900',
+            // backgroundColor: '#5c0900',aaa
 
             backgroundColor: '#f4511e',
         },
